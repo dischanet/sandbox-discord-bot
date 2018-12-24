@@ -2,7 +2,7 @@ version: 0.0
 os: linux
 files:
   - source: /
-    destination: /home/centos/repos/kniveout-discord-bot
+    destination: /home/centos/repos/sandbag-discord-bot
 permissions:
   - object: /
     owner: centos
