@@ -8,8 +8,8 @@ client.on("ready", () => {
 });
 
 client.on("message", message => {
-  if (message.content === "ping") {
-    message.reply("mouse!!!");
+  if (message.content === "sandbox-dev") {
+    message.reply("```mouse\n...```");
   }
 });
 
