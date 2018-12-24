@@ -1,7 +1,7 @@
 #!/bin/bash
 
-cd /home/centos/repos/sandbox-discord-bot
+cd /home/centos/repos/sandbag-discord-bot
 
 sudo ./hooks/set-environment.sh
-sudo ln -s ./hooks/sandbox-discord-bot.service /etc/systemd/system/sandbox-discord-bot.service
-sudo /usr/bin/systemctl enable sandbox-discord-bot
+sudo ln -s ./hooks/sandbag-discord-bot.service /etc/systemd/system/sandbag-discord-bot.service
+sudo /usr/bin/systemctl enable sandbag-discord-bot
