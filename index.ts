@@ -8,7 +8,7 @@ client.on("ready", () => {
 });
 
 client.on("message", message => {
-  if (message.content === "ping") {
+  if (message.content === "sandbox-dev") {
     message.reply("mouse!!!");
   }
 });
