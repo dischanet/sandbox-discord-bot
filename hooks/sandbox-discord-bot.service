@@ -1,0 +1,14 @@
+[Unit]
+Description=Sandbox Discord Bot Agent
+After=network.target
+
+
+[Service]
+Type=simple
+ExecStart=/home/centos/.nvm/versions/node/v11.5.0/bin/node /home/centos/repos/sandbox-discord-bot/dist/index.js
+WorkingDirectory=/home/centos/repos/sandbox-discord-bot
+EnvironmentFile=/home/centos/repos/kniveout-discord-bot/environment
+Restart=on-failure
+
+[Install]
+WantedBy=multi-user.target
