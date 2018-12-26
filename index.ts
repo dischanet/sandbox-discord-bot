@@ -7,9 +7,17 @@ client.on("ready", () => {
   console.log(`Logged in as ${client.user.tag}!`);
 });
 
-client.on("message", msg => {
-  if (msg.content === "ping") {
-    msg.reply("pong");
+
+const developers = "\
+```\n\
+mouse\n\
+...\n\
+```\
+"
+
+client.on("message", message => {
+  if (message.content === "sandbox-dev") {
+    message.reply(developers);
   }
 });
 
