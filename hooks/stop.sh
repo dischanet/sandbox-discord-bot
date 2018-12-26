@@ -1,3 +1,3 @@
 #!/bin/sh
 
-sudo /usr/bin/systemctl stop sandbag-discord-bot || true
+sudo /usr/bin/systemctl stop sandbox-discord-bot || true

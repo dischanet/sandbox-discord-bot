@@ -1,1 +1,1 @@
-# sandbag-discord-bot
+# sandbox-discord-bot
