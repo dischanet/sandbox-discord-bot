@@ -11,6 +11,7 @@ client.on("ready", () => {
 const developers = "\
 ```\n\
 mouse\n\
+ato lash\n\
 ...\n\
 ```\
 "
