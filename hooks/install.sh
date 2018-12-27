@@ -1,6 +1,6 @@
 #!/bin/bash
 
-cd /home/centos/repos/sandbox-discord-bot
+cd /home/ec2-user/repos/sandbox-discord-bot
 
 REGION=$(curl -s 169.254.169.254/latest/meta-data/local-hostname | cut -d '.' -f2)
 PARAMETER_NAME=SANDBOX_DISCORD_BOT_SECRET
