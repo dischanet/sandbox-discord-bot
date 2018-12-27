@@ -2,23 +2,14 @@ version: 0.0
 os: linux
 files:
   - source: /
-    destination: /home/centos/repos/sandbox-discord-bot
-permissions:
-  - object: /
-    owner: centos
-    group: centos
-    mode: 777
-    pattern: '**'
+    destination: /home/ec2-user/repos/sandbox-discord-bot
 hooks:
   ApplicationStop:
     - location: hooks/stop.sh
       timeout: 300
-      runas: centos
   AfterInstall:
     - location: hooks/install.sh
       timeout: 300
-      runas: centos
   ApplicationStart:
     - location: hooks/start.sh
       timeout: 3300
-      runas: centos
