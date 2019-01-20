@@ -5,7 +5,7 @@ After=network.target
 
 [Service]
 Type=simple
-ExecStart=npm run start
+ExecStart=/usr/bin/npm run start
 WorkingDirectory=/home/ec2-user/repos/sandbox-discord-bot
 EnvironmentFile=/home/ec2-user/repos/sandbox-discord-bot/environment
 Restart=on-failure
