@@ -7,14 +7,13 @@ client.on("ready", () => {
   console.log(`Logged in as ${client.user.tag}!`);
 });
 
-
 const developers = "\
 ```\n\
 mouse\n\
 ato lash\n\
 ...\n\
 ```\
-"
+";
 
 client.on("message", message => {
   if (message.content === "sandbox-dev") {

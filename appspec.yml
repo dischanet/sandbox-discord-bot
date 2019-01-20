@@ -4,9 +4,6 @@ files:
   - source: /
     destination: /home/ec2-user/repos/sandbox-discord-bot
 hooks:
-  ApplicationStop:
-    - location: hooks/stop.sh
-      timeout: 300
   AfterInstall:
     - location: hooks/install.sh
       timeout: 300
