@@ -7,8 +7,10 @@ client.on("ready", () => {
   console.log(`Logged in as ${client.user.tag}!`);
 });
 
-const developers = "\
+const developers =
+  "\
 ```\n\
+discha公式ボットは以下のデベロッパーの協力で作成されました\n\
 mouse\n\
 ato lash\n\
 ...\n\
