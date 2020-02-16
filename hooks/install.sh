@@ -8,3 +8,4 @@ PARAMETER_NAME=SANDBOX_DISCORD_BOT_SECRET
 echo "DISCORD_BOT_TOKEN=$(/usr/bin/aws --region ${REGION} ssm get-parameter --name ${PARAMETER_NAME} --query "Parameter.Value" --output text)" > environment
 
 sudo cp ./hooks/sandbox-discord-bot.service /etc/systemd/system/sandbox-discord-bot.service
+sudo systemctl start sandbox-discord-bot.service
